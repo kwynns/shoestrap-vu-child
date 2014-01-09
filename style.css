@@ -10,7 +10,13 @@ Template:      shoestrap-vu
 .vubanner{text-align:center}
 .vubanner h1{margin:0px}
 
+/* breadcrumb */
+.breadcrumb{background:none}
+
 /* Sidebar */
 .widget.panel {border:none;background:none}
 .panel-default>.panel-heading {border:none;color: #fff;background:#333;padding: 15px 15px 15px 25px;font-family: Georgia,Times, serif;font-weight:bold}
 .sidebar{background:#eee;padding:0px}
+
+/* Footer */
+footer.content-info{background:#333 url('http://www.vanderbilt.edu/asset/i/footerbg.jpg') top 10px left 20% no-repeat;border-top: 7px solid #d8ab4c;}
