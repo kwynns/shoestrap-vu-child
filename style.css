@@ -5,5 +5,12 @@ Version:       0.1
 Author:        Kelsey Wynns, Bo Link
 Template:      shoestrap-vu
 */
+
+/* Banner */
 .vubanner{text-align:center}
 .vubanner h1{margin:0px}
+
+/* Sidebar */
+.widget.panel {border:none;background:none}
+.panel-default>.panel-heading {border:none;color: #fff;background:#333;padding: 15px 15px 15px 25px;font-family: Georgia,Times, serif;font-weight:bold}
+.sidebar{background:#eee;padding:0px}
