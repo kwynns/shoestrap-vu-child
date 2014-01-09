@@ -28,6 +28,7 @@ $layout_sidebar_on_front  = shoestrap_getVariable( 'layout_sidebar_on_front' );
       <?php endif; ?>
     <?php else : ?>
       <?php if ( !has_action( 'shoestrap_header_override' ) ) : ?>
+	  
         <?php get_template_part( 'templates/header' ); ?>
       <?php else : ?>
         <?php do_action( 'shoestrap_header_override' ); ?>
@@ -40,7 +41,7 @@ $layout_sidebar_on_front  = shoestrap_getVariable( 'layout_sidebar_on_front' );
   <?php if ( $site_style == 'boxed' ) : ?>
     </div>
   <?php endif; ?>
-
+<!-- second header -->
   <?php if ( has_action( 'shoestrap_below_top_navbar' ) ) : ?>
     <div class="before-main-wrapper">
       <?php do_action('shoestrap_below_top_navbar'); ?>
