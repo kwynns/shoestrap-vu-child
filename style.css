@@ -11,7 +11,13 @@ Template:      shoestrap-vu
 .vubanner h1{margin:0px}
 
 /* breadcrumb */
-.breadcrumb{background:none}
+.breadcrumb{background:none;margin-bottom: 5px;}
+
+/* Body */
+.page-header {margin-top:0px;}
+.page-header h1{margin-top:0px;}
+.main h2{color: #555;background: #ECECEC;border: 1px solid #DDD;padding: 5px 10px;border-radius: 8px;}
+.main h3{color: #666;line-height: 1.55em;}
 
 /* Sidebar */
 .widget.panel {border:none;background:none}
