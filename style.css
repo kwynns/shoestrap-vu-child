@@ -30,4 +30,12 @@ Template:      shoestrap-vu
 
 /* Footer */
 footer.content-info{background:#333 url('http://www.vanderbilt.edu/asset/i/footerbg.jpg') top 10px left 20% no-repeat;border-top: 7px solid #d8ab4c;}
-footer section.widget_flickr{max-width: 275px}
+footer h4 {color: #FC6;}
+footer {font-size: 12px}
+footer .panel-heading{font-size: 14px}
+footer .widget_flickr .panel-heading{padding-top:0px;}
+#yourvu, #popular {padding: 0;background: #222;padding: 15px;line-height: 1;border-radius: 15px;}
+#yourvu ul, #popular ul {list-style: none;display:inline-block;padding-left:5px}
+#yourvu ul li a, #popular ul li a {display: block;padding: 4px 8px;}
+#yourvu ul li a:link, #yourvu ul li a:visited, #popular ul li a:link, #popular ul li a:visited {color: #CCC;text-decoration: none;}
+#yourvu ul li a:hover, #popular ul li a:hover {color: #FC6;}
