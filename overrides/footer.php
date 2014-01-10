@@ -34,6 +34,12 @@ function shoestrap_footer_content_custom() {
     if ( is_active_sidebar( $sidebar ) ) {
       // Setting each column width accordingly
       $col_class = 12 / $num_of_sidebars;
+
+	  if($i == 1){$col_class = 2;}
+	  if($i == 2){$col_class = 4;}
+	  if($i == 3){$col_class = 4;}
+	  if($i == 4){$col_class = 2;}
+	 
     
       echo '<div class="' . $base_class . $col_class . '">';
       dynamic_sidebar( $sidebar );
