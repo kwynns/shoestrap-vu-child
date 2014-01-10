@@ -15,21 +15,26 @@ endif;
 if ( file_exists( get_template_directory() . '/lib/modules/core.images/module.php' ) ) :
         require_once get_template_directory() . '/lib/modules/core.images/module.php';
 endif;
+
  
 //load custom modules
 require_once locate_template('/modules/banner/module.php');
 
-//load over-rides
+//add social bar to social widget
+add_action('shoestrap_social_widget', 'shoestrap_navbar_social_bar' , 5);
+
+
+//load overrides
 require_once locate_template('/overrides/footer.php');
 
 
-//adds style.css to head
+//adds style.css to head -- THIS NEEDS TO BE MOVED TO /assets/less/vu-styles.ess FOR PROD
 function addStyles() {
     wp_enqueue_style('shoestrap-vu-css', get_stylesheet_directory_uri().'/style.css');
 }
 add_action('wp_head', 'addStyles');
 
-//include widgets
+//include custom widgets
 require_once locate_template('/widgets/widgets.php');
 
 

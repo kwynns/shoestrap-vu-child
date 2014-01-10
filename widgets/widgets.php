@@ -1,8 +1,8 @@
 <?php
 /**
- * Custom functions
+ * Custom widgets
  */
- add_action( 'shoestrap_social_widget', 'shoestrap_social_sharing', 5 );
+
 
 class Show_social extends WP_Widget {
 
@@ -31,7 +31,7 @@ class Show_social extends WP_Widget {
 		if ( ! empty( $title ) )
 			echo $args['before_title'] . $title . $args['after_title'];
 		//echo __( shoestrap_social_sharing(), 'text_domain' );
-		echo "social here";
+
 		do_action( 'shoestrap_social_widget' );
 		echo $args['after_widget'];
 	}
