@@ -3,6 +3,10 @@
 /*
  * The banner core options for the Shoestrap theme
  */
+ 
+add_filter( 'redux/options/' . REDUX_OPT_NAME . '/sections', 'shoestrap_module_banner_options', 16 );
+ 
+ 
 if ( !function_exists( 'shoestrap_module_banner_options' ) ) :
 function shoestrap_module_banner_options( $sections ) {
 
@@ -50,13 +54,13 @@ function shoestrap_module_banner_options( $sections ) {
 
   $section['fields'] = $fields;
 
-  $section = apply_filters( 'shoestrap_module_header_options_modifier', $section );
+  $section = apply_filters( 'shoestrap_module_banner_options_modifier', $section );
   
   $sections[] = $section;
   return $sections;
 
 }
 endif;
-add_filter( 'redux/options/shoestrap/sections', 'shoestrap_module_banner_options', 66 );  
+
 
 include_once( dirname( __FILE__ ) . '/functions.banner.php' );
