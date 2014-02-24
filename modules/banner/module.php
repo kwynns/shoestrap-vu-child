@@ -4,7 +4,7 @@
  * The banner core options for the Shoestrap theme
  */
  
-add_filter( 'redux/options/' . REDUX_OPT_NAME . '/sections', 'shoestrap_module_banner_options', 16 );
+add_filter( 'redux/options/shoestrap/sections', 'shoestrap_module_banner_options', 16 );
  
  
 if ( !function_exists( 'shoestrap_module_banner_options' ) ) :
